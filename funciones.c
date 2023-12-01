@@ -16,7 +16,13 @@ void calcularDistancias(float puntos[][2],float distancias[]){
         distancias[2]=sqrt(pow(puntos[1][0]-puntos[2][0],2)+pow(puntos[1][1]-puntos[2][1],2));
 }
 
-void calcularPerimetroArea(float *perimetro, float *area, float distancias[]){
+void calcularPerimetro(float *perimetro, float distancias[]){
+    *perimetro=distancias[0]+distancias[1]+distancias[2];
+    float s = *perimetro/2;
+
+}
+
+void calcularArea(float *perimetro, float *area, float distancias[]){
     *perimetro=distancias[0]+distancias[1]+distancias[2];
     float s = *perimetro/2;
     *area = sqrt(s*(s-distancias[0])*(s-distancias[1])*(s-distancias[2]));

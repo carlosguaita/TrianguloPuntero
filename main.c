@@ -9,7 +9,8 @@ int main (int argc, char *argv[]) {
 
     leerPuntos(puntos,3,2);
     calcularDistancias(puntos,distancias);
-    calcularPerimetroArea(&perimetro1,&area2,distancias);
+    calcularPerimetro(&perimetro1,distancias);
+    calcularArea(&perimetro1,&area2,distancias);
 
     printf("El perimetro del triangulo es: %f\n",perimetro1);
     printf("El area del triangulo es: %f\n",area2);
